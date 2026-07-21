@@ -16,7 +16,7 @@ df.columns = df.columns.str.strip()
 df = df.dropna()
 print("Dataset Head:\n", df.head())
 # STEP 2: FEATURE SELECTION & SPLITTING
-print("\n--- STEP 2: FEATURE SELECTION & DATA SPLITTING ---")
+print("\n STEP 2: FEATURE SELECTION & DATA SPLITTING ")
 # Define features (advertising platforms) and target (Sales)
 features = ['TV', 'Radio', 'Newspaper']
 target = 'Sales'
@@ -29,7 +29,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 print(f"Training shapes: X_train={X_train.shape}, y_train={y_train.shape}")
 # STEP 3: MODEL TRAINING & EVALUATION
-print("\n--- STEP 3: REGRESSION MODEL TRAINING ---")
+print("\n STEP 3: REGRESSION MODEL TRAINING ")
 model = LinearRegression()
 model.fit(X_train, y_train)
 
@@ -44,7 +44,7 @@ print(f"Model Performance:")
 print(f" - Root Mean Squared Error (RMSE): {rmse:.4f}")
 print(f" - R-squared (Accuracy Score): {r2:.4f} ({r2*100:.1f}%)")
 # STEP 4: ACTIONABLE MARKETING INSIGHTS
-print("\n--- STEP 4: BUSINESS INSIGHTS ---")
+print("\n STEP 4: BUSINESS INSIGHTS ")
 coefficients = pd.DataFrame({'Platform': features, 'Impact Coefficient': model.coef_})
 coefficients = coefficients.sort_values(by='Impact Coefficient', ascending=False)
 

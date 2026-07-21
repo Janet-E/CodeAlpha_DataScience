@@ -9,7 +9,7 @@ df.columns = df.columns.str.strip()
 print(" STEP 1: DATA LOADED ")
 print("Dataset Columns:", df.columns.tolist())
 #STEP 2: FEATURE ENGINEERING & ENCODING
-print("\n--- STEP 2: FEATURE ENGINEERING ---")
+print("\n STEP 2: FEATURE ENGINEERING ")
 # Feature Engineering: Calculate the age of the car to give the model better data
 df['Car_Age'] = 2026 - df['Year']
 # Handling Categorical Features: Convert text columns into numbers (One-Hot Encoding)
