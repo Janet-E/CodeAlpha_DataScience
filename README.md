@@ -4,7 +4,7 @@ This repository contains a collection of data science and machine learning proje
 Project Breakdown:
 
 Task 1: Iris Flower Classification
-Objective: Classify Iris flowers into three distinct species (*Setosa, Versicolor, Virginica) based on physical measurements (sepal and petal length/width).
+Objective: Classify Iris flowers into three distinct species (Setosa, Versicolor, Virginica) based on physical measurements (sepal and petal length/width).
 Type: Multi-class Classification (Supervised Learning).
 Key Concepts:Feature scaling, classification metrics, decision boundaries.
 
